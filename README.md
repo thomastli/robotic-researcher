@@ -1,4 +1,4 @@
-# Submission: Robotic Researcher
+# Robotic Researcher
 The demo of the robot can be run via `main.py`
 
 Unit tests for `robotics.py` can be run via `test_robotics.py`
