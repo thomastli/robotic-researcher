@@ -1,0 +1,2 @@
+pandas==2.0.1
+rpaframework==23.0.0
