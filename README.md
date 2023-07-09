@@ -1,4 +1,6 @@
 # Robotic Researcher
+[![CodeFactor](https://www.codefactor.io/repository/github/thomastli/robotic-researcher/badge)](https://www.codefactor.io/repository/github/thomastli/robotic-researcher)
+
 The demo of the robot can be run via `main.py`
 
 Unit tests for `robotics.py` can be run via `test_robotics.py`
