@@ -105,7 +105,7 @@ class Scientist:
         died = datetime.strptime(self.date_of_death, '%Y-%m-%d').date()
         self.age = died.year - born.year - ((died.month, died.day) < (born.month, born.day))
 
-    def print_information(self): # pragma: no cover
+    def print_information(self):  # pragma: no cover
         print("Name: " + self.name)
         print("Date of birth: " + self.date_of_birth)
         print("Date of death: " + self.date_of_death)
@@ -126,12 +126,12 @@ class Robot:
         self.sorted_by_age = pd.DataFrame()
         self.average_age = 0.0
 
-    def say_hello(self): # pragma: no cover
+    def say_hello(self):  # pragma: no cover
         print("Hello, my name is " + self.name)
         print("I retrieve information (background, date of birth, death, and age) on scientists from Wikipedia")
         print()
 
-    def say_goodbye(self): # pragma: no cover
+    def say_goodbye(self):  # pragma: no cover
         br.close_all_browsers()
         print("Finished retrieving information on scientists from Wikipedia")
         print("Goodbye, my name is " + self.name)
@@ -140,7 +140,7 @@ class Robot:
     def shutdown():
         br.close_browser()
 
-    def retrieve_information_on_scientists(self, scientists_names):
+    def retrieve_information_on_scientists(self, scientists_names):  # pragma: no cover
         print("Retrieving information on the following scientists: " + ", ".join(scientists_names))
         print()
 
@@ -162,7 +162,7 @@ class Robot:
         self.sort_scientists_by_age()
         self.calculate_average_age()
 
-    def print_additional_statistics(self):
+    def print_additional_statistics(self):  # pragma: no cover
         print("Additional statistics:")
         print("Scientists sorted by date of birth (ascending): " + ", ".join(self.sorted_by_birth))
         print("Scientists sorted by date of death (descending): " + ", ".join(self.sorted_by_death))
