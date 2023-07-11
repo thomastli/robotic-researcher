@@ -1,5 +1,7 @@
 # Robotic Researcher
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/thomastli/robotic-researcher/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/thomastli/robotic-researcher/tree/main)
 [![CodeFactor](https://www.codefactor.io/repository/github/thomastli/robotic-researcher/badge)](https://www.codefactor.io/repository/github/thomastli/robotic-researcher)
+[![codecov](https://codecov.io/gh/thomastli/robotic-researcher/branch/main/graph/badge.svg?token=LBpMFr2s6k)](https://codecov.io/gh/thomastli/robotic-researcher)
 
 The demo of the robot can be run via `main.py`
 
