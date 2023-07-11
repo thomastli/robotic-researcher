@@ -29,17 +29,6 @@ def open_webpage(webpage):
     br.open_available_browser(webpage)
 
 
-def is_valid_date(date):
-    if date:
-        try:
-            datetime.strptime(date, "%Y-%m-%d")
-            return True
-        except ValueError:
-            return False
-
-    return False
-
-
 def retrieve_scientist_background():
     if br.is_element_enabled(DIFFERENT_BIRTH_NAME_XPATH):
         background = br.get_text(ALT_PARAGRAPH_XPATH)
@@ -116,7 +105,7 @@ class Scientist:
         died = datetime.strptime(self.date_of_death, '%Y-%m-%d').date()
         self.age = died.year - born.year - ((died.month, died.day) < (born.month, born.day))
 
-    def print_information(self):
+    def print_information(self): # pragma: no cover
         print("Name: " + self.name)
         print("Date of birth: " + self.date_of_birth)
         print("Date of death: " + self.date_of_death)
@@ -137,12 +126,12 @@ class Robot:
         self.sorted_by_age = pd.DataFrame()
         self.average_age = 0.0
 
-    def say_hello(self):
+    def say_hello(self): # pragma: no cover
         print("Hello, my name is " + self.name)
         print("I retrieve information (background, date of birth, death, and age) on scientists from Wikipedia")
         print()
 
-    def say_goodbye(self):
+    def say_goodbye(self): # pragma: no cover
         br.close_all_browsers()
         print("Finished retrieving information on scientists from Wikipedia")
         print("Goodbye, my name is " + self.name)
