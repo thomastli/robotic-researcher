@@ -5,13 +5,13 @@
 
 RPA Framework robot that retrieves information on scientists from Wikipedia and generates age statistics.
 
+## Implementation
+The robot will retrieve the required information (date of birth, date of death, background) from Wikipedia via the RPA Framework and calculate the age.
+
 ## Usage
 The demo of the robot can be run via `main.py`
 
 Unit tests for `robotics.py` can be run via `test_robotics.py`
-
-## Implementation
-The robot will retrieve the required information (date of birth, date of death, background) from Wikipedia via the RPA Framework and calculate the age.
 
 As a bonus feature, the robot will also convert the retrieved information into a pandas Dataframe and perform the following analysis:
 * Scientists sorted by date of birth (ascending)
