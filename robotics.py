@@ -155,7 +155,7 @@ class Robot:
 
         print()
 
-    def generate_additional_statistics(self):
+    def generate_additional_statistics(self):  # pragma no cover
         self.convert_scientists_to_dataframe()
         self.sort_scientists_by_birth()
         self.sort_scientists_by_death()
@@ -170,7 +170,7 @@ class Robot:
         print("Average age of scientists: " + str(self.average_age))
         print()
 
-    def convert_scientists_to_dataframe(self):
+    def convert_scientists_to_dataframe(self):  # pragma no cover
         self.df = pd.DataFrame(self.scientists, columns=[NAME, DATE_OF_BIRTH, DATE_OF_DEATH, AGE, BACKGROUND])
         self.df[DATE_OF_BIRTH] = self.df[DATE_OF_BIRTH].values.astype('datetime64[s]')
         self.df[DATE_OF_DEATH] = self.df[DATE_OF_DEATH].values.astype('datetime64[s]')
