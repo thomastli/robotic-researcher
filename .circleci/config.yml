@@ -1,12 +1,20 @@
 version: 2.1
 orbs:
+  browser-tools: circleci/browser-tools@1.4.1
   codecov: codecov/codecov@3.2.5
 jobs:
   build:
     docker:
-    - image: cimg/python:3.11
+    - image: cimg/python:3.11-browsers
     steps:
     - checkout
+    - browser-tools/install-chrome
+    - browser-tools/install-chromedriver
+    - run:
+        name: Check browser
+        command: |
+          google-chrome --version
+          chromedriver --version
     - run:
         name: Setup testing environment
         command: |
