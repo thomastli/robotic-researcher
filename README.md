@@ -3,6 +3,9 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/thomastli/robotic-researcher/badge)](https://www.codefactor.io/repository/github/thomastli/robotic-researcher)
 [![codecov](https://codecov.io/gh/thomastli/robotic-researcher/branch/main/graph/badge.svg?token=LBpMFr2s6k)](https://codecov.io/gh/thomastli/robotic-researcher)
 
+RPA Framework robot that retrieves information on scientists from Wikipedia and generates age statistics.
+
+## Usage
 The demo of the robot can be run via `main.py`
 
 Unit tests for `robotics.py` can be run via `test_robotics.py`
